@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@android:color/transparent"
+    android:layout_margin="16dp"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/group_detail_review_img"
+        android:src="@drawable/group_comment1"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/group_detail_review_name"
+                    android:textColor="@android:color/black"
+                    android:text="아무개"
+                    android:fontFamily="@font/notosanskr_regular_hestia"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/group_detail_review_star1"
+                    android:src="@drawable/group_star_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/group_detail_review_star2"
+                    android:src="@drawable/group_star_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/group_detail_review_star3"
+                    android:src="@drawable/group_star_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/group_detail_review_star4"
+                    android:src="@drawable/group_star_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/group_detail_review_star5"
+                    android:src="@drawable/group_star_full"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:id="@+id/group_detail_review_date"
+                    android:fontFamily="@font/notosanskr_regular_hestia"
+                    android:text="2018.08.30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/group_detail_review_content"
+                android:text="리뷰 글 입니다. 다양한 노래들리뷰 글 입니다. 다양한 노래들리뷰 글 입니다. 다양한 노래들리뷰 글 입니다. 다양한 노래들"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/notosanskr_regular_hestia"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+</LinearLayout>

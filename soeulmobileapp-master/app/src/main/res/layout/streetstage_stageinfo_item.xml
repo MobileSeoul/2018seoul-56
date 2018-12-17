@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="6dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+
+    android:clipToPadding="false">
+
+    <RelativeLayout
+        android:id="@+id/stageinfo_item_rel_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/stage_item_background"
+        android:elevation="3dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="6dp"
+        android:paddingTop="4dp"
+ >
+
+        <View
+            android:id="@+id/stageinfo_item_view_dot"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gray_color_oval" />
+
+        <TextView
+            android:id="@+id/stageinfo_item_tv_placename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/stageinfo_item_view_dot"
+            android:text="롯데몰 김포공항점"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/stageinfo_item_tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/stageinfo_item_tv_placename"
+            android:layout_marginBottom="6dp"
+            android:layout_toRightOf="@id/stageinfo_item_view_dot"
+            android:text="서울특별시 강서구 하늘로77"
+            android:textSize="11dp"
+            android:fontFamily="@font/notosanskr_regular_hestia"/>
+
+        <View
+            android:id="@+id/stageinfo_item_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@id/stageinfo_item_tv_address"
+            android:background="#AAA"
+            android:layout_marginTop="4dp"/>
+
+        -
+    </RelativeLayout>
+
+</RelativeLayout>

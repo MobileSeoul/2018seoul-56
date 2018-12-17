@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:background="@drawable/btn_bound"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/group_detail_review_write"
+            android:background="@android:color/transparent"
+            android:text="   공연후기를 남겨주세요"
+            android:drawableStart="@drawable/group_pen"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:orientation="horizontal">
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:textColor="@android:color/black"
+            android:text="총"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@color/actionBar"
+            android:id="@+id/group_detail_review_count"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            android:text=" "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="개의 후기가 있습니다"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/viewBar"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/fragment_group_review_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.5">
+
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:weightSum="10"
+    android:background="@android:color/white">
+
+    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+        android:id="@+id/main_bannerViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5">
+
+
+    </cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager>
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.2">
+
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/home_artist"
+            android:id="@+id/main_btn_group"
+            android:onClick="setMainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/home_place"
+            android:id="@+id/main_btn_stage"
+            android:onClick="setMainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.2">
+
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/home_icon_calender"
+            android:id="@+id/main_btn_schedule"
+            android:onClick="setMainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/home_ticket"
+            android:id="@+id/main_btn_ticket"
+            android:onClick="setMainBtn"
+            android:text="내티켓"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/home_bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.1">
+
+        <ImageButton
+            android:id="@+id/main_near_stage_btn"
+            android:background="@android:color/transparent"
+            android:src="@drawable/home_near"
+            android:onClick="setMainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:id="@+id/main_bookmark_but"
+            android:background="@android:color/transparent"
+            android:src="@drawable/bookmark"
+            android:layout_width="wrap_content"
+            android:onClick="setMainBtn"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

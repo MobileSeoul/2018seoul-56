@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+    <color name="colorPrimary">#9B87FF</color>
+    <color name="colorPrimaryDark">#9B87FF</color>
+    <color name="colorAccent">#9B87FF</color>
+
+    <color name="actionBar">#9B87FF</color>
+    <color name="scheduleSeleted">#A789F5</color>
+    <color name="scheduleNonSeleted"> #DCCEFF</color>
+    <color name="background">#F6F6F6</color>
+
+    <color name="viewBar">#d9d8d8</color>
+
+    <color name="performance">#0B427B</color>
+    <color name="instrumental">#14C322</color>
+    <color name="music">#C40000</color>
+    <color name="tradition">#FFE900</color>
+
+    <color name="dim">#88000000</color>
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@android:color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ticket_final_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/ticket_final_top"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:alpha="0.5"
+        android:background="@android:color/background_dark"
+       >
+
+        <ImageButton
+            android:id="@+id/ticket_final_back"
+            android:layout_gravity="start"
+            android:src="@drawable/icon_back_white"
+            android:background="@android:color/transparent"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:visibility="invisible"
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/ticket_final_share"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:text="공유"
+            android:textColor="@android:color/white"
+            android:drawableTop="@android:drawable/ic_menu_share" />
+
+
+        <Button
+            android:id="@+id/ticket_final_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:text="삭제"
+            android:textColor="@android:color/white"
+            android:drawableTop="@android:drawable/ic_menu_delete" />
+    </LinearLayout>
+
+
+</RelativeLayout>

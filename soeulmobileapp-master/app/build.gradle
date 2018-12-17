@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'com.google.gms.google-services'
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.teamnoname.streetartzone"
+        minSdkVersion 23
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:support-media-compat:27.1.1'
+
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.firebase:firebase-storage:16.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.google.firebase:firebase-core:16.0.3'
+    implementation 'com.android.support:multidex:1.0.3'
+
+    //firebase database
+    implementation 'com.google.firebase:firebase-database:16.0.2'
+    implementation 'com.google.firebase:firebase-auth:16.0.2'
+
+    //viewPager
+    implementation 'com.android.support:design:27.1.1'
+
+    //RecyclerView
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+
+    //cardView
+    implementation 'com.android.support:cardview-v7:27.1.1'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.7.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
+
+    //jsoup
+    implementation group: 'org.jsoup', name: 'jsoup', version: '1.11.3'
+
+
+    //banner
+    api('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2') {
+        exclude module: 'support-v4'
+    }
+
+    //stetho
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+
+    //realmAdapter
+    implementation 'io.realm:android-adapters:2.1.1'
+
+    //coverflow
+    implementation 'com.github.moondroid.coverflow:library:1.0'
+
+    implementation files('lib/YouTubeAndroidPlayerApi.jar')
+}

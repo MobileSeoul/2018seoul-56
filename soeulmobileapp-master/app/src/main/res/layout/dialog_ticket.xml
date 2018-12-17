@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ticket_total"
+    android:gravity="center"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/ticket_top"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ticket_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/dialog_ticket_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:textColor="@android:color/white"
+            android:layout_gravity="top"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            android:text="ARTIST"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/dialog_ticket_groupName"
+            android:textSize="20dp"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="16dp"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginBottom="5dp"
+                android:id="@+id/dialog_ticket_date"
+                android:fontFamily="@font/notosanskr_regular_hestia"
+                android:textSize="18dp"
+                android:textColor="@android:color/white"
+                android:gravity="end"
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/dialog_ticket_time"
+                    android:textSize="15dp"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/notosanskr_regular_hestia"
+                    android:gravity="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <TextView
+                android:gravity="end"
+                android:layout_gravity="bottom"
+                android:id="@+id/dialog_ticket_place"
+                android:textSize="15dp"
+                android:fontFamily="@font/notosanskr_regular_hestia"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+            <View
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ticket_edit_background"
+            android:src="@drawable/writing"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="여기를 눌러서 메세지를 입력해주세요!"
+            android:maxLines="4"
+            android:inputType="none"
+            android:textSize="14dp"
+            android:id="@+id/ticket_edit"
+            android:lineSpacingExtra="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:maxLength="80"
+            android:background="@android:color/transparent"
+            android:focusedByDefault="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/ticket_sending"
+        android:src="@drawable/writing_bottom"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

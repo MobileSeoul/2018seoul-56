@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:background="@color/actionBar"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:weightSum="5">
+
+        <ImageButton
+            android:id="@+id/group_main_btn_back"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_back_white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            android:text="거리공연단"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:id="@+id/group_main_btn_search"
+            android:background="@android:color/transparent"
+            android:src="@drawable/group_search"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:layout_weight="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="5">
+
+        <TextView
+            android:onClick="setCategoryClick"
+            android:id="@+id/group_btn_all"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="전체"
+            android:layout_width="0dp"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:onClick="setCategoryClick"
+            android:id="@+id/group_btn_instrument"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="기악"
+            android:layout_width="0dp"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:onClick="setCategoryClick"
+            android:id="@+id/group_btn_performance"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:text="퍼포먼스"
+            android:layout_width="0dp"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:onClick="setCategoryClick"
+            android:id="@+id/group_btn_tradition"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            android:gravity="center"
+            android:text="전통"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:onClick="setCategoryClick"
+            android:id="@+id/group_btn_music"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            android:text="음악"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="5"
+        android:layout_weight="0.05">
+
+        <TextView
+            android:id="@+id/group_bar_all"
+            android:background="@color/actionBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/group_bar_instrument"
+            android:background="@color/actionBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/group_bar_performance"
+            android:background="@color/actionBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/group_bar_tradition"
+            android:background="@color/actionBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/group_bar_music"
+            android:background="@color/actionBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.7">
+
+        <android.support.v7.widget.RecyclerView
+            android:background="@color/background"
+            android:id="@+id/group_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

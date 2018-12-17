@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="#FFF"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:background="@color/actionBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공연장위치"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="17dp"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/streetstage_activity_img_xbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_back_white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.92"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <FrameLayout
+            android:id="@+id/streetstage_activity_box_map"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="10dp">
+            <ImageView
+                android:id="@+id/streetstage_activity_img_soeulmap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/mapmap" />
+
+            <ImageView
+                android:id="@+id/streetstage_activity_img_district"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </FrameLayout>
+
+
+        <ExpandableListView
+            android:id="@+id/streetstage_activity_list_districtinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/streetstage_activity_box_map"
+            android:layout_marginTop="8dp"
+            android:divider ="@null"
+            android:childDivider="@null"
+            android:groupIndicator="@null">
+
+        </ExpandableListView>
+
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "540665852830",
+    "firebase_url": "https://streetartzone-bc5b8.firebaseio.com",
+    "project_id": "streetartzone-bc5b8",
+    "storage_bucket": "streetartzone-bc5b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:540665852830:android:aad5826a1638c5ba",
+        "android_client_info": {
+          "package_name": "com.teamnoname.streetartzone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "540665852830-mn9csn73vvp49d9grnuvq9s2908spr2v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamnoname.streetartzone",
+            "certificate_hash": "33884e3bb752004da1f8ab32f80e63db574f33e2"
+          }
+        },
+        {
+          "client_id": "540665852830-grtqvesdsjirr7q3u195l91g9vpmkvlq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teamnoname.streetartzone",
+            "certificate_hash": "8f6fb31dd2049b31a7c081d8d9ead4d56edbeea2"
+          }
+        },
+        {
+          "client_id": "540665852830-g4ggq1pihkr3k62btia7foqrnq8sjudk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjPCd5_6AAdT-Kt-DtSIR2DkFTiYL4C_M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "540665852830-g4ggq1pihkr3k62btia7foqrnq8sjudk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

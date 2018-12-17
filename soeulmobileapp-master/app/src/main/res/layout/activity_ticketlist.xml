@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:background="@android:color/black"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPagerbackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dim" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpagerTop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:clipToPadding="false"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="100dp"
+        android:paddingBottom="100dp"
+        android:layout_gravity="center" />
+
+
+    <TextView
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@android:color/white"
+        android:visibility="gone"
+        android:fontFamily="@font/notosanskr_regular_hestia"
+        android:id="@+id/ticket_list_noDataMsg"
+        android:text="티켓이 없습니다."
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:alpha="0.8"
+        android:padding="15dp"
+        android:layout_gravity="top"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+
+        <ImageButton
+            android:id="@+id/ticket_list_back"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_back_white"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="17dp"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:text="티켓"
+            android:fontFamily="@font/notosanskr_regular_hestia"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teamnoname.streetartzone">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE">
+
+    </uses-permission>
+
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/soeul_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light.NoActionBar"
+        android:name=".SoeulApp"
+        >
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <!--스플래쉬 화면-->
+        <activity android:name=".SplashActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 스케쥴 -->
+        <activity android:name=".Schedule.Schedule"
+            android:screenOrientation="portrait"/>
+
+        <!-- 공연팀 -->
+        <activity android:name=".StreetGroup.StreetGroupAcitivty"
+            android:screenOrientation="portrait"/>
+
+        <!-- 공연팀 상세 페이지 -->
+        <activity android:name=".StreetGroup.StreetGroupDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 공연팀 상세 이미지 클릭 -->
+        <activity android:name=".StreetGroup.StreetGroupDetailImgActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 티켓 이미지 화면-->
+        <activity android:name=".StreetGroup.TicketImage"
+            android:screenOrientation="portrait"/>
+
+        <!-- 공연팀 리뷰 작성 -->
+        <activity android:name=".StreetGroup.WriteReview"
+            android:screenOrientation="portrait"/>
+
+        <!--공연장소-->
+        <activity android:name=".StreetStage.StreetStageAcitivity"
+            android:screenOrientation="portrait"/>
+
+        <!--알림-->
+        <activity android:name=".StreetGroup.UserBookmarkGroupsActivity"
+            android:screenOrientation="portrait"/>
+
+        <!--내주변 공연장-->
+        <activity android:name=".StreetStage.NearStageActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- 내티켓 -->
+        <activity android:name=".Ticket.TicketListActivity"
+            android:screenOrientation="portrait"/>
+
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAmcQvZVq0W7Pd5S8uo839ikwE7Gq1p-58" />
+
+    </application>
+
+</manifest>
